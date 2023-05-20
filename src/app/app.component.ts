@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'smartInterview';
+  title = 'Posts';
+  currentPostId = 0;
+
+  selectedPost(postId: number){
+    this.currentPostId = postId;
+  }
 }
